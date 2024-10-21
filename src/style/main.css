@@ -1,0 +1,221 @@
+main {
+    margin-top: 5rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dev-texto h1 {
+    font-size: 5rem;
+   margin-bottom: 0.5rem;
+   color: var(--cor-de-texto);
+   font-family: var(--fonte);
+}
+
+.highlight {
+    color: rgba(74, 121, 232, 0.787); 
+    font-weight: bold; /* Opcional: deixa as palavras em negrito */
+}
+
+.dev-texto p {
+    font-size: 1rem;
+    color: rgba(220, 220, 220, 0.81);
+    font-family: var(--fonte);
+}
+
+.highlight_{
+    color: rgb(255, 255, 255);
+}
+
+
+.imagenscell {
+    position: relative;
+}
+
+.imagem-cell {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.226);
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    transition: var(--transicao);
+}
+
+.imagem-cell:hover {
+    transform: translatex(3px);
+}
+
+
+.servicos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.servicos-item{
+    background-color: blue;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+    transition: var(--transicao);
+}
+
+.servicos-item:hover{
+    transform: translateY(-5px);
+}
+
+.servicos-item h3 {
+   color: white;
+} 
+
+.servicos-item p {
+    color: white;
+}
+
+
+.contatos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+
+}
+
+.contatos-card {
+    background-color: rgba(23, 23, 118, 0.557);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: var(--transicao);
+}
+
+.contatos-card:hover {
+    transform: translateY(-5px);
+}
+
+.titulo-contato {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+   
+}
+
+h5{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 10rem; /* Adicione esta linha para o espaçamento acima do h5 */
+}
+
+
+
+
+.servicos-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.instagram-icon {
+    color: white; /* Cor do Instagram */
+    font-size: 24px; /* Tamanho do ícone */
+    transition: color 0.3s; /* Animação ao passar o mouse */
+}
+
+.instagram-icon:hover {
+    color: blue; /* Cor ao passar o mouse */
+}
+
+.localizacao {
+    color: red;
+}
+
+#cnt {
+    margin-top: 10px;
+}
+
+@media (max-width: 1170px) {
+    .servicos-item p {
+        white-space: normal; /* permite quebra de linha */
+        margin: 0; /* remove margens */
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .servicos-item p {
+        white-space: normal; /* permite quebra de linha */
+        margin: 0; /* remove margens */
+       
+    }
+}
+
+
+@media (max-width: 700px) {
+    .contatos-card {
+        padding: 10px; /* Ajustar espaçamento interno em telas menores */
+        margin: 10px;
+
+    }
+
+    .titulo-contato {
+        font-size: 1.25rem; /* Reduzir tamanho da fonte do título */
+    }
+
+    .contatos-card p {
+        font-size: 0.9rem; /* Ajustar tamanho da fonte do parágrafo */
+    }
+}
+
+
+@media (max-width: 500px) {
+    .imagenscell{
+        display: none;
+    }
+ }
+
+ @media (max-width: 400px) {
+    .servicos-item p {
+       font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .servicos-item p {
+        font-size: 0.875rem !important; /* Forçar a aplicação da regra */
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 800px) {
+    .servicos-item p {
+        font-size: 0.875rem !important; /* Forçar a aplicação da regra */
+        
+    }
+}
+
+@media (max-width: 770px) {
+    .contatos-grid {
+        padding: 10px; /* Ajustar espaçamento interno em telas menores */
+        margin: 10px;
+        grid-template-columns: none;
+
+} 
+}
+
+
+
+@media (max-width: 750px) {
+    .imagenscell {
+        display: none; /* Oculta a div com a imagem */
+    }
+}

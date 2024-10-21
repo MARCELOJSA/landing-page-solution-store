@@ -1,0 +1,173 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0%;
+    background-color: var(--color-de-fundo);
+    box-shadow: 0 10px 6px rgba(205, 205, 206, 0.1);
+    z-index: 1000;
+}
+
+#logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+nav#logo img {
+    width: 80px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px;
+    margin: 5px;
+}
+
+nav#logo a {
+    display: flex; /* Permite que a imagem e o texto fiquem alinhados */
+    text-decoration: none;
+    padding: 0;
+    align-items: center; /* Alinha o texto com a imagem */
+}
+
+
+.nome-loja {
+    font-size: 1.5rem;
+    font-weight: bold;
+   color: var(--cor-de-texto);
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a:hover {
+        color: blue; /* Cor do link ao passar o mouse */
+        text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+.nav-item {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--cor-de-texto);
+    font-family: var(--fonte);
+}
+
+.nav-item.active a {
+    color: 1d1d1d;
+    
+  }
+  
+
+  #mobile_btn {
+    display: none;
+  }
+  
+  #mobile_menu {
+    display: none;
+  }
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #logo .btn-default {
+      display: none;
+    }
+};  
+
+#mobile_btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    font-size:  1.5rem;
+    cursor: pointer;
+    
+}
+
+#mobile_menu.active {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+
+  #mobile_nav_list {
+    list-style: none;
+    text-align: center;
+  }
+
+  #mobile_btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+
+ 
+
+
+
+
+
+  #mobile_menu.active {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+
+  #mobile_nav_list {
+    list-style: none;
+    text-align: center;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .dev-texto h1 {
+      font-size: 1.5rem; /* Reduzir tamanho da fonte em telas menores */
+  } 
+   
+  .highlight{
+    font-size: 3rem;
+  }
+
+  .dev-texto p {
+      font-size: 0.9rem; /* Ajustar tamanho da fonte */
+  }
+
+  .btn-default {
+      width: 100%; /* Botão ocupa toda a largura */
+      font-size: 1rem; /* Ajustar o tamanho da fonte do botão */
+  }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  #mobile_btn {
+    display: none;
+  }
+};  
+
