@@ -3,8 +3,7 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0%;
-    background-color: var(--color-de-fundo);
-    box-shadow: 0 10px 6px rgba(205, 205, 206, 0.1);
+    background-color: transparent;
     z-index: 1000;
 }
 
@@ -61,15 +60,11 @@ nav#logo a {
     color: var(--cor-de-texto);
     font-family: var(--fonte);
 }
-
-.nav-item.active a {
-    color: 1d1d1d;
-    
-  }
   
 
   #mobile_btn {
     display: none;
+    
   }
   
   #mobile_menu {
