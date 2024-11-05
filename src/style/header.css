@@ -84,7 +84,7 @@ nav#logo a {
     background-color: transparent;
     font-size:  1.5rem;
     cursor: pointer;
-    margin: 0 0px 0 100px;
+    margin: 0 0 0 100px;
 }
 
 #mobile_menu.active {
